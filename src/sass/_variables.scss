@@ -1,0 +1,45 @@
+// Palette of colors
+// Maine page background color -  #FFF
+// Secondary page background color - #F5F4FA
+// Complementary page background color - #2F303A
+// Maine text color - #757575
+// Secondary text color - #212121
+// Complementary text color - #FFF
+// Accent text color - #2196F3
+// Individual color of some text in footer - rgba(255, 255, 255, 0.6)
+
+// CSS variables for color: Background, Text colors and other properties
+:root {
+    --maine-background-color: #fff;
+    --secondary-background-color: #f5f4fa;
+    --complementary-background-color: #2f303a;
+    --maine-text-color: #757575;
+    --secondary-text-color: #212121;
+    --complementary-text-color: #fff;
+    --accent-text-color: #2196f3;
+    --extra-accent-text-color: #277cc2;
+    --individual-text-color: rgba(255, 255, 255, 0.6);
+    --logo-dicor-color: #000;
+    --portfolio-card-border-color: #eeeeee;
+
+    --portfolio-card-set-gap: 30px;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// SASS variables for Fonts
+$fontFamily: 'Roboto', sans-serif;
+$fontLogo: 'Raleway', sans-serif;
+
+// SASS Variables for Adaptive Breakpoints
+// For mobile
+$preMobile: 479px;
+$mobile: 480px;
+
+// For tablet
+$preTablet: 767px;
+$tablet: 768px;
+
+// For desktop
+$preDesktop: 1199px;
+$desktop: 1200px;
+

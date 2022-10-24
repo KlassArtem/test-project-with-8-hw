@@ -1,0 +1,129 @@
+.header {
+    // Animation effect for 'header' while scrolling
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    // Decor
+    border-bottom: 1px solid #ececec;
+    background-color: var(--maine-background-color);
+}
+
+// General geometry header options
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // Changing geometry by Breakpoint (767px)
+    @media screen and (max-width: $preTablet) {
+        // Geometry 
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    // Changing geometry by Breakpoint (768px)
+    @media screen and (min-width: $tablet) {
+        // Geometry 
+        justify-content: flex-start;
+    }
+}
+
+// Site navigation
+.page-nav,
+.nav-list,
+.header-contacts__link {
+    // Geometry
+    display: flex;
+    align-items: center;
+
+    // Changing visibility by Breakpoint (767px)
+    @media screen and (max-width: $preTablet) {
+        display: none;
+    }
+}
+
+.nav-list {
+    // Geometry
+    margin-right: 90px;
+
+    // Changing geometry by Breakpoint (1200px)
+    @media screen and (min-width: $desktop) {
+        margin-right: 312px;
+    }
+}
+
+.nav-list__itm:not(:last-child) {
+    // Geometry
+    margin-right: 50px;
+}
+
+.nav-list__link {
+    // Geometry
+    display: block;
+    padding: 32px 0;
+
+    // Text
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+
+    // Changing text size by Breakpoint (1200px)
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+    }
+
+    // Animation execution options
+    transition: color 250ms var(--timing-function);
+}
+
+.header-contacts {
+    // Changing visibility by Breakpoint (767px)
+    @media screen and (max-width: $preTablet) {
+            display: none;
+    }
+
+    // Changing geometry by Breakpoint (1200px)
+    @media screen and (min-width: $desktop) {
+        // Geometry
+        display: flex;
+        align-items: center;
+    }
+    
+    
+}
+
+.header-contacts__item:not(:last-child) {
+    // Geometry
+    margin-bottom: 10px;
+
+    // Changing geometry by Breakpoint (1200px)
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+    
+}
+
+.header-contacts__link {
+    // Text
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--maine-text-color);
+
+    // for SVG icon with id: 'icon-envelope' & 'icon-smartphone'
+    fill: currentColor;
+
+    // Animation execution options
+    transition: color 250ms var(--timing-function);
+}
+
+.header-contacts__text {
+    // Geometry
+    display: inline-block;
+    margin-left: 10px;
+}
